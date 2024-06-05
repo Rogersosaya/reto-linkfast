@@ -6,7 +6,6 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
 - Maven 3.6.0 o superior
 - MySQL Server
 - Postman
-- 
 ## Configuración de la Base de Datos
 
 1. **Abrir Gestor de MySQL:**

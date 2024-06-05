@@ -4,8 +4,13 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
 
 - Java 11 o superior
 - Maven 3.6.0 o superior
+
+## Programas
 - MySQL Server
 - Postman
+- IDE para Java (por ejemplo, IntelliJ IDEA, Eclipse, o NetBeans)
+- Gestor de base de datos (por ejemplo, MySQL Workbench, DBeaver, o HeidiSQL)
+
 ## Configuración de la Base de Datos
 
 1. **Abrir Gestor de MySQL:**
@@ -29,6 +34,7 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
      spring.datasource.password=tu_contraseña
      spring.jpa.hibernate.ddl-auto=update
      spring.jpa.show-sql=true
+     server.servlet.contextPath=/api
      ```
 
    - Si usas `application.yml`:
@@ -127,5 +133,7 @@ Este proyecto incluye pruebas unitarias para garantizar el correcto funcionamien
 3. **Verificar los Resultados**
    - Observa la ventana de resultados de pruebas para verificar que todas las pruebas se ejecuten correctamente.
    
+# Observaciones
+Se puede utilizar la dependencia Lombok para generar automáticamente los métodos getters y setters, entre otros, mediante anotaciones. Sin embargo, esta dependencia no ha sido incluida en el proyecto actual debido a que no está dentro de las dependencias aprobadas para su uso.
 
-
+Aunque es posible crear manualmente los métodos CRUD en el repository, se ha optado por utilizar la interfaz JpaRepository proporcionada por Spring Data JPA. Esto permite que los métodos CRUD se generen automáticamente, logrando un código más limpio.

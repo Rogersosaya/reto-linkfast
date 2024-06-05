@@ -51,10 +51,10 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
   Click derecho en RetoLinkfastApplication y darle a "Run Retolinkfast..."
 ## Poblar tabla book
   En tu gestor de Base de datos agrega estos registros de prueba
-   - INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('Java Programming', 'John Doe', '2020-01-01', '1234567890');
+```INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('Java Programming', 'John Doe', '2020-01-01', '1234567890');
      INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('Spring Framework', 'Jane Smith', '2021-01-01', '0987654321');
      INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('"El Señor de los Anillos"', 'J.R.R. Tolkien', '1954-07-29', '123456789012');
-     INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('C++ para principiantes', 'Peter Jones', '01-03-2022', '9876543210');
+     INSERT INTO book (titulo, autor, fecha_publicacion, isbn) VALUES ('C++ para principiantes', 'Peter Jones', '01-03-2022', '9876543210');```
   
 ## Probar APIs 
 1. **Abrir Postman**

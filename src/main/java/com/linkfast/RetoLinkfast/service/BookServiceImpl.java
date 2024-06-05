@@ -9,14 +9,21 @@ import java.util.List;
 import java.util.Optional;
 
 
-public interface BookService {
+@Service
+public class BookServiceImpl implements BookService {
+
+    @Autowired
+    private BookRepository bookRepository;
 
     /**
      * Obtiene todos los libros disponibles.
      *
      * @return Lista de todos los libros disponibles.
      */
-    List<Book> getBooks();
+    @Override
+    public List<Book> getBooks() {
+        return bookRepository.findAll();
+    }
 
     /**
      * Obtiene un libro por su ID.
@@ -24,21 +31,30 @@ public interface BookService {
      * @param id ID del libro a buscar.
      * @return El libro correspondiente al ID proporcionado, si existe.
      */
-    Optional<Book> getBook(Long id);
+    @Override
+    public Optional<Book> getBook(Long id) {
+        return bookRepository.findById(id);
+    }
 
     /**
      * Guarda o actualiza un libro.
      *
      * @param book El libro a guardar o actualizar.
      */
-    void saveOrUpdate(Book book);
+    @Override
+    public void saveOrUpdate(Book book) {
+        bookRepository.save(book);
+    }
 
     /**
      * Elimina un libro por su ID.
      *
      * @param id ID del libro a eliminar.
      */
-    void delete(Long id);
+    @Override
+    public void delete(Long id) {
+        bookRepository.deleteById(id);
+    }
 
     /**
      * Busca libros por título y/o autor.
@@ -46,5 +62,8 @@ public interface BookService {
      * @param query Término de búsqueda que puede ser el título, el autor o una combinación de ambos.
      * @return Lista de libros que coinciden con el término de búsqueda.
      */
-    List<Book> searchBooksByTitleAndAuthor(String query);
+    @Override
+    public List<Book> searchBooksByTitleAndAuthor(String query) {
+        return bookRepository.searchBooksByTitleAndAuthor(query);
+    }
 }

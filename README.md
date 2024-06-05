@@ -19,8 +19,8 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
 
 ## Clonar el repositorio:
    - ```bash
-     git clone https://github.com/usuario/repositorio.git
-     cd repositorio
+     git clone https://github.com/usuario/repositorio.git](https://github.com/Rogersosaya/reto-linkfast.git
+     
 ## Configurar credenciales de application.properties o application.yml
    - Si usas `application.properties`:
      server.port=8081

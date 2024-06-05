@@ -135,6 +135,6 @@ Este proyecto incluye pruebas unitarias para garantizar el correcto funcionamien
    - Observa la ventana de resultados de pruebas para verificar que todas las pruebas se ejecuten correctamente.
    
 ## Observaciones
-Se puede utilizar la dependencia Lombok para generar automáticamente los métodos getters y setters, entre otros, mediante anotaciones. Sin embargo, esta dependencia no ha sido incluida en el proyecto actual debido a que no está dentro de las dependencias aprobadas para su uso.
+- Se puede utilizar la dependencia Lombok para generar automáticamente los métodos getters y setters, entre otros, mediante anotaciones. Sin embargo, esta dependencia no ha sido incluida en el proyecto actual debido a que no está dentro de las dependencias aprobadas para su uso.
 
-Aunque es posible crear manualmente los métodos CRUD en el repository, se ha optado por utilizar la interfaz JpaRepository proporcionada por Spring Data JPA. Esto permite que los métodos CRUD se generen automáticamente, logrando un código más limpio.
+- Aunque es posible crear manualmente los métodos CRUD en el repository, se ha optado por utilizar la interfaz JpaRepository proporcionada por Spring Data JPA. Esto permite que los métodos CRUD se generen automáticamente, logrando un código más limpio.

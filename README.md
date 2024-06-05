@@ -23,13 +23,13 @@ Este reto es una aplicación de Spring Boot que utiliza MySQL como base de datos
      
 ## Configurar credenciales de application.properties o application.yml
    - Si usas `application.properties`:
-     server.port=8081
+     ```server.port=8081
      spring.datasource.url=jdbc:mysql://localhost:3306/retolinkfast
      spring.datasource.username=tu_usuario
      spring.datasource.password=tu_contraseña
      spring.jpa.hibernate.ddl-auto=update
      spring.jpa.show-sql=true
-     
+     ```
 
    - Si usas `application.yml`:
      ```yaml
